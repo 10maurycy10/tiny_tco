@@ -11,7 +11,7 @@ A tiny dirt simple no_std tail call optimization library.
     		TCO::Ret(y)
     	} else {
     		// reduce x by 1, and multiplyx value by x
-    		TCO::Rec((x-1,y*x)
+    		TCO::Rec((x-1,y*x))
     	},
     );
-    assert_eq!(f((3,1)),6);
+    assert_eq!(fact((3,1)),6);
