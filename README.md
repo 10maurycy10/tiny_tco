@@ -4,6 +4,8 @@ A tiny dirt simple no_std tail call optimization library.
 
 ## how to use
 
+    add no_std=true to fetures to not link std
+
     // y is the acoumulator for the value
     let fact = tco(|(x,y): (i32,i32)|
     	if (x == 0) {

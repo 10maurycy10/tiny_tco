@@ -1,8 +1,5 @@
+#[cfg(feature = "no_std")]
 #![no_std]
-
-#[cfg(test)]
-#[macro_use]
-extern crate std;
 
 /// A helper for TCO
 pub enum TCO<REC, RET> {
