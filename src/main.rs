@@ -29,8 +29,7 @@ pub fn tco<A,B>(fun: fn(A) -> TCO<A,B>) -> impl Fn(A) -> B {
 /// use tail calls to compute factorial.
 /// converted to optimized function with tco
 /// this avoids stack overflows
-#[test]
-fn test_tco() {
+fn main() {
 	// y is an acumulator for result
 	let f = tco(|(x,y): (i32,f64)|
 		if (x == 0) {
