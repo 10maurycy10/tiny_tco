@@ -1,5 +1,9 @@
 #![no_std]
 
+#[cfg(test)]
+#[macro_use]
+extern crate std;
+
 /// A helper for TCO
 pub enum TCO<REC, RET> {
 	/// Recall function
