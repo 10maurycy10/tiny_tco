@@ -1,4 +1,3 @@
-#[cfg(feature = "no_std")]
 #![no_std]
 
 /// A helper for TCO
