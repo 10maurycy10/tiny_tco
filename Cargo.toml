@@ -1,0 +1,15 @@
+[package]
+name = "tiny_tco"
+version = "0.1.0"
+authors = ["mz <10maurycy10@gmail.com>"]
+edition = "2018"
+description = "A tiny dirt simple no_std tail call optimization library."
+license = "LGPL-2.1-or-later"
+keywords = ["tco","no_std","tail","call","optimization"]
+categories = ["algorithms"]
+homepage = "https://github.com/10maurycy10/tiny_tco"
+repository = "https://github.com/10maurycy10/tiny_tco.git"
+readme = "README.md"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
