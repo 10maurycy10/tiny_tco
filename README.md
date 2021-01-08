@@ -2,6 +2,18 @@
 
 A tiny dirt simple no_std tail call optimization library.
 
+## how it works
+
+The tco function returns a closure implementing a trival loop.
+
+    let mut c: TCO<A, B> = TCO::Rec(p);
+    loop {
+        match c {
+            TCO::Rec(i) => c = fun(i),
+            TCO::Ret(b) => return b,
+        }
+    }
+
 ## how to use
 
     // y is the acoumulator for the value
