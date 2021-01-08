@@ -26,7 +26,7 @@ pub fn tco<A, B>(fun: fn(A) -> TCO<A, B>) -> impl Fn(A) -> B {
 /// this avoids stack overflows
 #[test]
 fn test() {
-    // y is an acumulator for result
+    // y is an accumulator for result
     let f = tco(|(x, y): (i32, f64)| {
         if (x == 0) {
             // if we have reached 0 return computed value
